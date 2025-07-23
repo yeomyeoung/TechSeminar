@@ -24,4 +24,12 @@ public class User {
 
     @Column(name = "role")           // ✅ 역할 컬럼과 매핑
     private String role;
+
+    public String getPassword() {
+        return this.password;
+    }
+
+    public String getRole() {
+        return this.role;
+    }
 }
